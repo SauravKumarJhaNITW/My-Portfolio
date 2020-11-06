@@ -17,7 +17,12 @@
             background-color: rgb(245, 225, 245);
             margin: 0;
             padding: 0;
-
+            font-size: 20px;
+        }
+        
+        img {
+            min-width: 100px;
+            min-height: 14px;
         }
         
         th,
@@ -41,22 +46,24 @@
         
         #t01 {
             background-color: burlywood;
+             
         }
     </style>
 </head>
 
-<body>
-    <ul style="list-style-type: none;margin-right: 3%">
-        <li id="greet">
+<body style="overflow-x: hidden;">
+    <div id="greet" style="min-width: 100vw;">
         <header style="text-align: center;background-color: rgba(2, 15, 20, 0.589);color: white;">
             <br>
             <h2>Welcome to my portfolio website!</h2>
             <br>
             <h3>I am Saurav Kumar Jha.</h3><br>
         </header>
-        </li>
+    </div>
+    <ul style="list-style-type: none;margin-right: 3%">
+
         <li id="education">
-            <table id="t01" >
+            <div style="overflow-x: auto;"><table id="t01">
                 <caption style="text-align: left;">
                     <h2>Education</h2>
                 </caption>
@@ -92,7 +99,7 @@
                     <td>2016-2017</td>
                     <td>10 Cgpa</td>
                 </tr>
-            </table>
+            </table></div>
         </li>
         <li>
             <h2>Check out my profiles</h2>
@@ -125,13 +132,13 @@
         <li>
             <h2>Relevant Skills</h2>
             <ul>
-               <li>Problem solving in C++</li>
-               <li>Data structures and algorithms</li>
-               <li style="display: none;">Database Management Systems</li>
-               <li>Object-oriented programming in c++</li>
-               <li>Html, Css and Javascript</li>
-               <li style="display: none;">Php</li>  
-               <li style="display: none;">Basic Bootstrap</li>
+                <li>Problem solving in C++</li>
+                <li>Data structures and algorithms</li>
+                <li style="display: none;">Database Management Systems</li>
+                <li>Object-oriented programming in c++</li>
+                <li>Html, Css and Javascript</li>
+                <li style="display: none;">Php</li>
+                <li style="display: none;">Basic Bootstrap</li>
             </ul>
         </li>
     </ul>
