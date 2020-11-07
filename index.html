@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port Folio</title>
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        
         body {
             background-color: rgb(245, 225, 245);
             margin: 0;
             padding: 0;
             font-size: 20px;
+            overflow-x: hidden;
         }
         
         img {
@@ -25,82 +19,118 @@
             min-height: 14px;
         }
         
-        th,
-        td {
-            padding: 15px;
-            text-align: left;
+        @media only screen and (min-width: 400px) {
+
         }
         
-        #t01 tr:nth-child(even) {
-            background-color: #eee;
-        }
-        
-        #t01 tr:nth-child(odd) {
-            background-color: #fff;
-        }
-        
-        #t01 th {
-            background-color: black;
+        #he {
+            text-align: center;
+            background-color: rgba(2, 15, 20, 0.589);
             color: white;
         }
         
-        #t01 {
-            background-color: burlywood;
-             
+        #greet {
+            min-width: 100vw;
         }
+        
+        #ul1 {
+            list-style-type: none;
+            margin-right: 3%;
+        }
+        
+        .d1 {
+            background-color: rgb(99, 94, 94);
+            color: white;
+            min-height: 6vw; 
+            margin-top: 0px;
+            margin-bottom: 1px;
+        }
+        
+        .d2 {
+            background-color: white;
+            color: black;
+            display: none;
+        }
+        
+        .button {
+            background-color: inherit;
+            min-height: inherit;
+            width: 100%;
+            color: inherit;
+            outline: none;
+            transition-duration: 0.4s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+          background-color: #4CAF50;
+         }
+
+         #education {
+            margin-top: 5px;
+            margin-left: 3vw;
+            margin-right: 3vw;
+         }
     </style>
 </head>
 
-<body style="overflow-x: hidden;">
-    <div id="greet" style="min-width: 100vw;">
-        <header style="text-align: center;background-color: rgba(2, 15, 20, 0.589);color: white;">
+<body>
+    <div id="greet">
+        <header id="he">
             <br>
             <h2>Welcome to my portfolio website!</h2>
             <br>
             <h3>I am Saurav Kumar Jha.</h3><br>
         </header>
     </div>
-    <ul style="list-style-type: none;margin-right: 3%">
+    <div id="education">
+        <h2>Education</h2>
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do').id)"><b>B.Tech</b></button>
+            </div>
+            <div class="d2" id="do">
+                <p>Second Year | EEE | NIT Warangal | 2019-continued</p>
+            </div>
+        </div>
 
-        <li id="education">
-            <div style="overflow-x: auto;"><table id="t01">
-                <caption style="text-align: left;">
-                    <h2>Education</h2>
-                </caption>
-                <tr>
-                    <th>Sl. No.</th>
-                    <th>Qualification</th>
-                    <th>Stream/Subject</th>
-                    <th>University/Board</th>
-                    <th>Year of Study</th>
-                    <th>Cgpa/Percentage</th>
-                </tr>
-                <tr>
-                    <td>1.</td>
-                    <td> B.Tech</td>
-                    <td>Electrical</td>
-                    <td>NIT Warangal,India</td>
-                    <td>2019 – continued</td>
-                    <td>9.28 Cgpa</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>12th</td>
-                    <td>Science</td>
-                    <td>BSEB</td>
-                    <td>2017-2019</td>
-                    <td>86.2%</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>10th</td>
-                    <td>_</td>
-                    <td>CBSE</td>
-                    <td>2016-2017</td>
-                    <td>10 Cgpa</td>
-                </tr>
-            </table></div>
-        </li>
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do1').id)"><b>12th</b></button>
+            </div>
+
+            <div class="d2" id='do1'>
+                <p>Science | BSEB | 2017-2019
+            </div>
+        </div>
+
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do2').id)"><b>10th</b></button>
+            </div>
+
+            <div class="d2" id='do2'>
+                <p>CBSE | 2016-2017</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         function call(id) {
+            var x = document.getElementById(id);
+            if (x.style.display == "none") {
+                x.style.display = "inline-block";
+                x.style.width = "100%";
+                x.style.textAlign = "center";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+    </script>
+
+    <ul id="ul1">
         <li>
             <h2>Check out my profiles</h2>
             <ul style="list-style-type: none;">
