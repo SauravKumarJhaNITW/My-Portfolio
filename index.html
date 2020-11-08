@@ -14,7 +14,7 @@
             overflow-x: hidden;
         }
         
-        img {
+        .ls {
             min-width: 100px;
             min-height: 14px;
         }
@@ -72,6 +72,33 @@
             margin-left: 3vw;
             margin-right: 3vw;
          }
+         .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+          margin-top: 5px;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            border-radius: 5px; 
+            background-color: rgb(99, 94, 94);
+            color: white;
+             
+            max-width: 300px;
+        }
+
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+          text-align: center;
+        }
+        #pic {
+            border-radius: 5px 5px 0 0;
+            width:100%;
+             max-height: 400px;
+            
+        }
     </style>
 </head>
 
@@ -81,9 +108,18 @@
             <br>
             <h2>Welcome to my portfolio website!</h2>
             <br>
-            <h3>I am Saurav Kumar Jha.</h3><br>
         </header>
     </div>
+
+    <div class="card">
+  <img src="pic1.jpg" id="pic" alt="pic1">
+  <div class="container">
+    <br>
+    <b><span>Saurav Kumar Jha<span></b><br>
+    <br>Eager to learn new technology.<br><br>
+  </div>
+</div>
+
     <div id="education">
         <h2>Education</h2>
         <div>
@@ -135,13 +171,13 @@
             <h2>Check out my profiles</h2>
             <ul style="list-style-type: none;">
                 <li>
-                    <a href="https://codeforces.com/profile/imsauravgauravjha" target="_blank"><img src="Codeforces_logo.png" style="width: 10%"></a>
+                    <a href="https://codeforces.com/profile/imsauravgauravjha" target="_blank"><img src="Codeforces_logo.png" class="ls" style="width: 10%"></a>
                 </li>
                 <li>
-                    <a href="https://www.hackerrank.com/imsauravgaurav" target="_blank"><img src="hackerrank_logo.png" style="width: 10%"></a>
+                    <a href="https://www.hackerrank.com/imsauravgaurav" target="_blank"><img src="hackerrank_logo.png" class="ls" style="width: 10%"></a>
                 </li>
                 <li>
-                    <a href="https://github.com/SauravKumarJhaNITW" target="_blank"><img src="github_logo.png" style="width: 8%"></a>
+                    <a href="https://github.com/SauravKumarJhaNITW" target="_blank"><img src="github_logo.png" class="ls" style="width: 8%"></a>
                 </li>
             </ul>
         </li>
