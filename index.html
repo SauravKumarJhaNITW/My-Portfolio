@@ -49,7 +49,7 @@
         .d2 {
             background-color: white;
             color: black;
-            display: none;
+            
         }
         
         .button {
@@ -100,58 +100,6 @@
             
         }
     </style>
-</head>
-
-<body>
-    <div id="greet">
-        <header id="he">
-            <br>
-            <h2>Welcome to my portfolio website!</h2>
-            <br>
-        </header>
-    </div>
-
-    <div class="card">
-  <img src="pic1.jpg" id="pic" alt="pic1">
-  <div class="container">
-    <br>
-    <b><span>Saurav Kumar Jha<span></b><br>
-    <br>Eager to learn new technology.<br><br>
-  </div>
-</div>
-
-    <div id="education">
-        <h2>Education</h2>
-        <div>
-            <div class="d1">
-                <button class="button" onclick="call(document.getElementById('do').id)"><b>B.Tech</b></button>
-            </div>
-            <div class="d2" id="do">
-                <p>Second Year | EEE | NIT Warangal | 2019-continued</p>
-            </div>
-        </div>
-
-        <div>
-            <div class="d1">
-                <button class="button" onclick="call(document.getElementById('do1').id)"><b>12th</b></button>
-            </div>
-
-            <div class="d2" id='do1'>
-                <p>Science | BSEB | 2017-2019
-            </div>
-        </div>
-
-        <div>
-            <div class="d1">
-                <button class="button" onclick="call(document.getElementById('do2').id)"><b>10th</b></button>
-            </div>
-
-            <div class="d2" id='do2'>
-                <p>CBSE | 2016-2017</p>
-            </div>
-        </div>
-    </div>
-
     <script>
          function call(id) {
             var x = document.getElementById(id);
@@ -165,6 +113,59 @@
 
         }
     </script>
+</head>
+
+<body>
+    <div id="greet">
+        <header id="he">
+            <br>
+            <h2>Welcome to my portfolio website!</h2>
+            <br>
+        </header>
+    </div>
+
+    <div class="card">
+  <img src="pic2.jpg" id="pic" alt="pic2">
+  <div class="container">
+    <br>
+    <b><span>Saurav Kumar Jha<span></b><br>
+    <br>Eager to learn new technology.<br><br>
+  </div>
+</div>
+
+    <div id="education">
+        <h2>Education</h2>
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do').id)"><b>B.Tech</b></button>
+            </div>
+            <div class="d2" style="display: none;" id="do">
+                <p>Second Year | EEE | NIT Warangal | 2019-continued</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do1').id)"><b>12th</b></button>
+            </div>
+
+            <div class="d2" style="display: none;" id='do1'>
+                <p>Science | BSEB | 2017-2019
+            </div>
+        </div>
+
+        <div>
+            <div class="d1">
+                <button class="button" onclick="call(document.getElementById('do2').id)"><b>10th</b></button>
+            </div>
+
+            <div class="d2" style="display: none;" id='do2'>
+                <p>CBSE | 2016-2017</p>
+            </div>
+        </div>
+    </div>
+
+    
 
     <ul id="ul1">
         <li>
